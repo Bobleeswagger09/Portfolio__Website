@@ -39,20 +39,29 @@ const About = () => {
             </article>
           </div>
           <p>
-            Hi there!<br/>
-          
-              I’m a Web Developer with over 2years of experience in area of computer programming . 
-              I build things for the web and I’m passionate about utilizing new technologies to make better user experience for customers.
-              I thrive in collaborative environments and love working on project that challenge me to learn new technologies and techniques.
-              I’m highly motivated to provide legendary service to customers and teammate, as well as encouraging thought of new possibilities.<br/>
-              
-              <br/>
-              My specialties include Javascript and React.js and am always looking for opportunities to apply this skills to create intuitive and user-friendly web applications. 
-              weather it's working on the frontend, backend or both, I enjoy the full development process, from conceptualization to deployment.<br/>
-            <br/>
-
-            If you're looking for a versatile and motivated full stack developer for your team, feel free to connect with me on any of my social media handles. 
-            i'm always open to new opportunities and partnerships.
+            Hi there!
+            <br />
+            I’m a Web Developer with over 2years of experience in area of
+            computer programming . I build things for the web and I’m passionate
+            about utilizing new technologies to make better user experience for
+            customers. I thrive in collaborative environments and love working
+            on project that challenge me to learn new technologies and
+            techniques. I’m highly motivated to provide legendary service to
+            customers and teammate, as well as encouraging thought of new
+            possibilities.
+            <br />
+            <br />
+            My specialties include Javascript and React.js and am always looking
+            for opportunities to apply this skills to create intuitive and
+            user-friendly web applications. weather it's working on the
+            frontend, backend or both, I enjoy the full development process,
+            from conceptualization to deployment.
+            <br />
+            <br />
+            If you're looking for a versatile and motivated full stack developer
+            for your team, feel free to connect with me on any of my social
+            media handles. i'm always open to new opportunities and
+            partnerships.
           </p>
 
           <a href="#contact" className="btn btn-primary">

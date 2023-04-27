@@ -3,9 +3,6 @@ import './Services.css';
 import { webDev, UserInterface, non_technical } from '../../Assets/assets/data';
 import { BsCheck } from 'react-icons/bs';
 
-
-
-
 const Services = () => {
   return (
     <section id="services">
@@ -18,15 +15,14 @@ const Services = () => {
           </div>
 
           <ul className="service_list">
-            {UserInterface.map(({ id, service }) =>{
+            {UserInterface.map(({ id, service }) => {
               return (
                 <li key={id}>
                   <BsCheck className="sevice_list-icon" />
                   <p>{service}</p>
                 </li>
-              )
+              );
             })}
-            
           </ul>
         </article>
 
@@ -37,15 +33,14 @@ const Services = () => {
           </div>
 
           <ul className="service_list">
-            {webDev.map(({id, service}) =>{
-              return(
+            {webDev.map(({ id, service }) => {
+              return (
                 <li key={id}>
                   <BsCheck className="sevice_list-icon" />
                   <p>{service}</p>
                 </li>
-              )
-            })} 
-            
+              );
+            })}
           </ul>
         </article>
 
@@ -56,17 +51,14 @@ const Services = () => {
           </div>
 
           <ul className="service_list">
-            {non_technical.map(({id, service}) =>{
+            {non_technical.map(({ id, service }) => {
               return (
-                <li key={id}> 
+                <li key={id}>
                   <BsCheck className="sevice_list-icon" />
-                  <p>
-                    {service}
-                  </p>
+                  <p>{service}</p>
                 </li>
-              )
+              );
             })}
-            
           </ul>
         </article>
       </div>

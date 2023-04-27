@@ -1,7 +1,7 @@
-import React,  {useRef} from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
-import {contact} from "../../Assets/assets/data"
+import { contact } from '../../Assets/assets/data';
 
 const Contact = () => {
   const form = useRef();
@@ -25,11 +25,8 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          {contact.map(({id, icon, name, contactInfo, link })=>{
-
-          
+          {contact.map(({ id, icon, name, contactInfo, link }) => {
             return (
-              
               <article className="contact__option" key={id}>
                 {icon}
                 <h4>{name}</h4>
@@ -37,34 +34,34 @@ const Contact = () => {
                 <a href={link} target="_blank" rel="noreferrer noopenner">
                   Send a Message
                 </a>
-              </article>    
-            )
+              </article>
+            );
           })}
         </div>
 
         {/* End of Contact Options */}
         <form ref={form} onSubmit={sendEmail}>
-					<input
-						type="text"
-						name="name"
-						placeholder="Your Full Name"
-						required
-					/>
-					<input
-						type="email"
-						name="email"
-						placeholder="example@mail.com"
-						required
-					/>
-					<textarea
-						name="message"
-						placeholder="your message"
-						rows="7"
-						required
-					></textarea>
-					<button type="submit" className="btn btn-primary">
-						Send Message
-					</button>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="your message"
+            rows="7"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
         </form>
       </div>
     </section>
@@ -72,5 +69,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-

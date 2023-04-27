@@ -15,7 +15,7 @@
     transparent
   );
   display: grid;
-  align-items: center;
+  place-items: center;
 }
 
 .about__me-image {

@@ -3,8 +3,7 @@ import './Header.css';
 import CTA from './CTA';
 import ME from '../../Assets/assets/me_02.png';
 import HeaderSocials from './HeaderSocials';
-import Typewriter from "typewriter-effect";
-
+import Typewriter from 'typewriter-effect';
 
 const Header = () => {
   return (
@@ -16,15 +15,14 @@ const Header = () => {
           <Typewriter
             options={{
               strings: [
-                "React Developer 😎",
-								"Currrently learning The MERN Stack  🔥",
-                "Life Hack: Learn More, Fear Less",
-                "The World is your Oyster 🥰",
+                'React Developer 😎',
+                'Currrently learning The MERN Stack  🔥',
+                'Life Hack: Learn More, Fear Less',
+                'The World is your Oyster 🥰',
               ],
-              autoStart:true,
-              loop:true,
-              pauseFor:2800,
-
+              autoStart: true,
+              loop: true,
+              pauseFor: 2800,
             }}
           />
         </h4>
