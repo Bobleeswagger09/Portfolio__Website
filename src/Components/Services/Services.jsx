@@ -9,27 +9,10 @@ const Services = () => {
       <h5>what I offer</h5>
       <h2>Services</h2>
       <div className="container services__container">
+          {/* Web Dev */}
         <article className="services">
           <div className="services_head">
-            <h3>UI/UX Design</h3>
-          </div>
-
-          <ul className="service_list">
-            {UserInterface.map(({ id, service }) => {
-              return (
-                <li key={id}>
-                  <BsCheck className="sevice_list-icon" />
-                  <p>{service}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </article>
-
-        {/* End of UX Design */}
-        <article className="services">
-          <div className="services_head">
-            <h3>Web Developments</h3>
+            <h3>Web Development</h3>
           </div>
 
           <ul className="service_list">
@@ -44,7 +27,6 @@ const Services = () => {
           </ul>
         </article>
 
-        {/* End of Web Developments */}
         <article className="services">
           <div className="services_head">
             <h3>Non Technical Skills</h3>
@@ -52,6 +34,24 @@ const Services = () => {
 
           <ul className="service_list">
             {non_technical.map(({ id, service }) => {
+              return (
+                <li key={id}>
+                  <BsCheck className="sevice_list-icon" />
+                  <p>{service}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </article>
+
+
+        <article className="services">
+          <div className="services_head">
+            <h3>UI/UX Design</h3>
+          </div>
+
+          <ul className="service_list">
+            {UserInterface.map(({ id, service }) => {
               return (
                 <li key={id}>
                   <BsCheck className="sevice_list-icon" />
