@@ -41,7 +41,7 @@ const About = () => {
           <p>
             Hi there!
             <br />
-            I’m a Web Developer with over 2years of experience in area of
+            I’m Victor Samuel, a Web Developer with over 2years of experience in area of
             computer programming . I build things for the web and I’m passionate
             about utilizing new technologies to make better user experience for
             customers. I thrive in collaborative environments and love working

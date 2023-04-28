@@ -1,14 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookMessenger } from 'react-icons/fa';
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { CiTwitter } from 'react-icons/ci';
+import { footerSocials } from '../../Assets/assets/data';
 
 const Footer = () => {
   return (
     <section id="Footer">
       <footer>
-        <a href="#" className="footer__logo"></a>
+        <a href="#" className="footer__logo">Edidiong Victor Samuel</a>
 
         <ul className="permalinks">
           <li>
@@ -35,15 +33,11 @@ const Footer = () => {
         </ul>
 
         <div className="footer__socials">
-          <a href="https://messanger.com">
-            <FaFacebookMessenger />
-          </a>
-          <a href="https://instagram.com">
-            <AiOutlineInstagram />
-          </a>
-          <a href="https://twitter.com">
-            <CiTwitter />
-          </a>
+          {footerSocials.map(({ id, link, icon })=>{
+              return (
+                <a href={link} target="_blank" key={id}>{icon}</a>
+              )
+          })}
         </div>
 
         <div className="footer__copyright">

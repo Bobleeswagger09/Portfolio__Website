@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.css';
-import { webDev, UserInterface, non_technical } from '../../Assets/assets/data';
+import { webDev, non_technical, UserInterface } from '../../Assets/assets/data';
 import { BsCheck } from 'react-icons/bs';
 
 const Services = () => {

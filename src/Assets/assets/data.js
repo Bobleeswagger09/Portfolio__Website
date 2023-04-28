@@ -1,3 +1,14 @@
+
+import AVTR1 from '../assets/avatar1.jpg';
+import AVTR2 from '../assets/avatar2.jpg';
+import AVTR3 from '../assets/avatar3.jpg';
+import AVTR4 from '../assets/avatar4.jpg';
+
+import { FaFacebookMessenger } from 'react-icons/fa';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { CiTwitter } from 'react-icons/ci';
+
+
 import { HiOutlineMail } from 'react-icons/hi';
 
 import { FaTwitter } from 'react-icons/fa';
@@ -57,7 +68,7 @@ export const frontendExperience = [
   {
     id: 6,
     title: 'React',
-    level: 'Experienced',
+    level: 'Intermediate',
   },
 ];
 
@@ -184,3 +195,50 @@ export const non_technical = [
     service: 'Teachability',
   },
 ];
+
+
+export const testi = [
+  {
+    id: 1,
+    avatar: AVTR1,
+    name: "Tina",
+    review: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad",
+  },
+  {
+    id: 2,
+    avatar: AVTR2,
+    name: "Mr Cake",
+    review: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad",
+  },
+  {
+    id: 3,
+    avatar: AVTR3,
+    name: "Shaw",
+    review: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad",
+  },
+  {
+    id: 4,
+    avatar: AVTR4,
+    name: "Lady B",
+    review: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad",
+  },
+    
+];
+
+export const footerSocials = [
+  {
+    id:1,
+    link:"https://messanger.com",
+    icon:<FaFacebookMessenger />,
+  },
+  {
+    id:2,
+    link:"https://instagram.com",
+    icon: <AiOutlineInstagram />,
+  },
+  {
+    id:3,
+    link:"https://twitter.com",
+    icon:<CiTwitter />
+  }
+]
