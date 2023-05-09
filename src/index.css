@@ -19,7 +19,7 @@
   --transition: all 400ms ease;
   --container-width-lg: 75%; /*width of container fo lg box */
   --container-width-md: 86%; /**/
-  --container-width-sm: 90%; /**/
+  --container-width-sm: 85%; /**/
 }
 
 html {
@@ -41,6 +41,7 @@ body {
 /* Some GENERAL STYLES */
 
 .container {
+  max-width: 968px;
   width: var(--container-width-lg);
   margin: 0 auto;
 }
@@ -111,6 +112,7 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+  height: auto;
 }
 
 /********** MEDIA QUERIES (MEDIUM DEVICES) *************/

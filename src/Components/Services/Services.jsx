@@ -1,69 +1,91 @@
-import React from 'react';
-import './Services.css';
-import { webDev, non_technical, UserInterface } from '../../Assets/assets/data';
-import { BsCheck } from 'react-icons/bs';
+import React, { useState } from 'react';
+import './services.css';
+import { webDev, UserInterface } from '../../Assets/assets/data';
+
+import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
 
 const Services = () => {
-  return (
-    <section id="services">
-      <h5>what I offer</h5>
-      <h2>Services</h2>
-      <div className="container services__container">
-          {/* Web Dev */}
-        <article className="services">
-          <div className="services_head">
-            <h3>Web Development</h3>
-          </div>
+    const [toggleState, setToggleState] = useState(0);
 
-          <ul className="service_list">
-            {webDev.map(({ id, service }) => {
-              return (
-                <li key={id}>
-                  <BsCheck className="sevice_list-icon" />
-                  <p>{service}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </article>
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
 
-        <article className="services">
-          <div className="services_head">
-            <h3>Non Technical Skills</h3>
-          </div>
+    return (
+        <section className="services__section" id="services">
+            <h2 className="section__title">Services</h2>
+            <span className="section__subtitle">What I offer</span>
+        
+            <div className="services__container container">
+                <div className="services__content">
+                    <div>
+                        <HiOutlineClipboardList className="services__icon" />
+                        <h3 className="services__title">Web <br />Development</h3>
+                    </div>
+                    <span className="services__button" onClick={() => toggleTab(1)}>
+                        View More
+                        <HiOutlineArrowSmRight className="services__button-icon" />
+                    </span>
+                    <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+                        <div className="services__modal-content">
+                            <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
+                            {webDev.map(({id, web,service}) =>{
+                                return(
+                                    <div key={id}>
+                                        <h3 className="services__modal-title">{web}</h3>
+                                        
+                                        <ul className="services__modal-services grid">
+                                            <li className="services__modal-service">
+                                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                                <p className="services__modal-info">
+                                                    {service}
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                )
+                                
 
-          <ul className="service_list">
-            {non_technical.map(({ id, service }) => {
-              return (
-                <li key={id}>
-                  <BsCheck className="sevice_list-icon" />
-                  <p>{service}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </article>
+                            })}
+                            
+                            
+                        </div>
+                    </div>
+                </div>
 
+                <div className="services__content">
+                    <div>
+                        <HiOutlineClipboardList className="services__icon" />
+                        <h3 className="services__title">UI/UX<br />Design</h3>
+                    </div>
 
-        <article className="services">
-          <div className="services_head">
-            <h3>UI/UX Design</h3>
-          </div>
-
-          <ul className="service_list">
-            {UserInterface.map(({ id, service }) => {
-              return (
-                <li key={id}>
-                  <BsCheck className="sevice_list-icon" />
-                  <p>{service}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </article>
-      </div>
-    </section>
+                    <span className="services__button" onClick={() => toggleTab(2)}>
+                        View More
+                        <HiOutlineArrowSmRight className="services__button-icon" />
+                    </span>
+                    <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
+                    
+                        <div className="services__modal-content">
+                                <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
+                                {UserInterface.map(({id, smt, service}) =>{
+                                    return(
+                                        <div key={id}>
+                                            <h3 className="services__modal-title">{smt}</h3>
+                                            <p className="services__modal-description">
+                                                {service}
+                                            </p>
+                                        </div>                                        
+                                            
+                                    )
+                                })}        
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
   );
-};
+}
 
 export default Services;

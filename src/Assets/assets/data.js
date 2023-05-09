@@ -1,3 +1,9 @@
+import IMG1 from '../assets/portfolio1.jpg';
+import IMG2 from '../assets/portfolio1.jpg'
+import IMG3 from '../assets/portfolio3.jpg';
+import IMG4 from '../assets/portfolio4.jpg';
+import IMG5 from '../assets/portfolio5.png';
+import IMG6 from '../assets/portfolio6.jpg';
 
 import AVTR1 from '../assets/avatar1.jpg';
 import AVTR2 from '../assets/avatar2.jpg';
@@ -103,38 +109,42 @@ export const backendExperience = [
 export const UserInterface = [
   {
     id: 1,
-    service: 'Principles of Good Web Design',
+    smt: 'Web Designing',
+    service: 
+    'Principles of Good Web Design',
   },
   {
     id: 2,
-    service: 'Wireframing',
+    service: 
+    'Wireframing',
   },
   {
     id: 3,
-    service: 'Color Theory',
+    service: 
+    'Color Theory',
   },
   {
     id: 4,
-    service: 'Typography and How to Choose Fonts',
+    service: 
+    'Typography and How to Choose Fonts',
   },
   {
     id: 5,
-    service: 'User Interface Design',
+    service: 
+    'User Interface Design',
   },
   {
     id: 6,
-    service: 'User Experience Design',
+    service: 
+    'User Experience Design',
   },
 ];
 
 export const webDev = [
   {
     id: 1,
+    web:'Web Development',
     service: 'Build responsive and beautiful pages.(HTML, CSS & JS).',
-  },
-  {
-    id: 2,
-    service: 'Develope your game of interest using JavaScript.',
   },
   {
     id: 3,
@@ -143,7 +153,7 @@ export const webDev = [
   },
   {
     id: 4,
-    service: 'Build modern Fullstack project using MERN stack.!',
+    service: 'Build modern Fullstack project using MERN stack.',
   },
   {
     id: 5,
@@ -242,3 +252,54 @@ export const footerSocials = [
     icon:<CiTwitter />
   }
 ]
+
+
+export const content = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Photo Gallary Website',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Todo-list App',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+
+  {
+    id: 3,
+    image: IMG3,
+    title: 'Simple Weather website',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Landing Page',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Blog Website',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+
+  {
+    id: 6,
+    image: IMG6,
+    title: 'Netflix-clone Website',
+    github: 'https://github.com',
+    demo: 'https://dribble.com/shots',
+  },
+];
